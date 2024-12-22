@@ -1,0 +1,132 @@
+/* Import Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh; /* Mengatur tinggi body agar penuh */
+    background-image: url('back3.jpg'); /* Ganti dengan path gambar */
+    background-size: cover; /* Pastikan gambar latar belakang menutupi seluruh layar */
+    background-position: center; /* Gambar berada di tengah */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0; /* Pastikan tidak ada padding tambahan di body */
+  }
+  
+  /* Header */
+  header {
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  header h1 {
+    font-weight: 600;
+  }
+  
+  header h1 span {
+    color: #ffcc00; /* Warna teks "your amazing city" */
+  }
+  
+  /* Chatbot Container */
+  .chat-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-top: 50px; /* Agar tidak terlalu dekat dengan header */
+    text-align: center;
+  }
+  
+  .chat-box {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 20px;
+    overflow-y: auto;
+    height: 300px;
+  }
+  
+  .chat-bot, .chat-user {
+    padding: 8px 10px;
+    margin: 5px 0;
+    border-radius: 12px;
+    font-size: 0.9rem;
+  }
+  
+  .chat-bot {
+    background-color: #e6f7ff;
+    text-align: left;
+  }
+  
+  .chat-user {
+    background-color: #d4edda;
+    text-align: right;
+  }
+  
+  .chat-input {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .chat-input button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+  }
+  
+  .chat-input button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    header {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  
+    .chat-container {
+      width: 95%;
+      height: auto;
+      margin-top: 10px;
+    }
+  
+    .chat-box {
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  
+    input[type="text"] {
+      width: 70%;
+      font-size: 0.9em;
+    }
+  
+    button {
+      width: 25%;
+      font-size: 0.9em;
+    }
+  }
